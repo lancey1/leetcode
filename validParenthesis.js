@@ -16,8 +16,6 @@ var isValid = function (s) {
       if (s[i] === "}") {
         iftrue = "{";
       }
-      console.log(openingBrackets);
-
       if (opening !== iftrue) {
         return false;
       }
