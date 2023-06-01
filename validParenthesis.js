@@ -5,18 +5,18 @@ var isValid = function (s) {
       openingBrackets.push(s[i]);
     }
     if (s[i] === ")" || s[i] === "]" || s[i] === "}") {
-      let iftrue;
+      let x;
       let opening = openingBrackets.pop();
       if (s[i] === ")") {
-        iftrue = "(";
+        x = "(";
       }
       if (s[i] === "]") {
-        iftrue = "[";
+        x = "[";
       }
       if (s[i] === "}") {
         iftrue = "{";
       }
-      if (opening !== iftrue) {
+      if (opening !== x) {
         return false;
       }
     }
