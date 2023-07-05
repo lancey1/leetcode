@@ -32,3 +32,4 @@ nums = [2, 3, 1, 1, 4];
 // console.log(findHighestAvailJump(listofSteps,nums,lengthofStepsArr))
 
 console.log(jump(nums));
+s
