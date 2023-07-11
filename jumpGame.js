@@ -1,5 +1,7 @@
 var jump = function (nums) {
-  let [left, right, jumps] = [0, 0, 0];
+  let left = 0
+  let right = 0
+  let jumps = 0
 
   while (right < nums.length - 1) {
     const maxReach = getMaxReach(nums, left, right);
@@ -17,6 +19,9 @@ const getMaxReach = (nums, left, right, maxReach = 0) => {
     const reach = nums[i] + i;
     maxReach = Math.max(maxReach, reach);
   }
-
+  console.log(maxReach)
   return maxReach;
 };
+
+
+console.log(jump(nums))
